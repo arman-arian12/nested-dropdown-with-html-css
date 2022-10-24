@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+
+
+.header-menu{
+    background-color: #1abc9c;
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    /* margin-left: -110x; */
+    
+}
+.header-menu ul li a{
+    color:white;
+    padding: 16px 20px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+}
+.header-menu ul li:first-child a{
+    border-left:1px solid #ddd; 
+}
+
+.header-menu ul li:hover > a{
+    background-color: #27ae60;
+}
+/* dropdown-start */
+.header-menu ul li{
+  position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    background-color:#1abc9c ;
+    border-top:1px solid #ddd;
+
+    transition: .4s;
+}
+.header-menu ul li ul li{
+    display: block;
+    /* position: relative; */
+}
+.header-menu ul li ul li a{
+    display: block;
+    border:none;
+    border-bottom:1px solid #ddd;
+}
+.header-menu ul ul li:first-child a{
+    border-left:none; 
+}
+/* dropdown-hover-part */
+.header-menu ul li ul{
+   opacity: 0;
+   visibility: hidden;
+
+   transform: scaley(0);
+   transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+/* .header-menu ul li ul li a:hover{} */
+                    
+
+                /* sub-deopdowbnmenu */
+.header-menu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 300px;
+    display: none;
+    border-left: 1px solid #ddd;
+    /* width: 400px; */
+}
+
+.header-menu ul li ul li:hover ul{
+    display: block;
+    /* position: relative; */
+}
+
+              /* sub-deopdowbnmenu 22*/
+ .header-menu ul li ul li ul li:hover ul{
+    display: block;
+ }
+.header-menu ul li ul li ul li ul {
+    display: none;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* socialmenu */
+
+.socialmenu{
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    /* left: 500px; */
+    background-color: #16a085;
+    width: 100%;
+}
+.socialmenu ul{
+    text-align: center;
+    
+}
+.socialmenu ul li{
+    display:inline-block;
+    margin-left: -5px;
+}
+.socialmenu ul li a{
+    color: #ddd;
+    background-color: rgb(92, 12, 12);
+    font-size: 30px;
+    /* padding: 10px; */
+    margin-left:5px;
+    margin-right: 13px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.socialmenu ul li a:hover{}
